@@ -11,6 +11,7 @@ body {
 }
 
 img {
+  display: inline-block;
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
@@ -50,6 +51,12 @@ ul {
   align-items: center;
 }
 
+.l-max-w {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* 背景色 */
 .l-bg-blue {
   color: #fff;
@@ -60,9 +67,26 @@ ul {
   background-color: #f7faff;
 }
 
+.l-bg-gray {
+  color: #fff;
+  background-color: #505050;
+}
+
+.l-bg-gray .unit-title {
+  color: #fff;
+}
+
 /* 余白 */
 .l-mb-18 {
   margin-bottom: 72px;
+}
+
+.l-p-15 {
+  padding: 60px;
+}
+
+.l-pb-10 {
+  padding-bottom: 40px;
 }
 
 .l-py-8 {
@@ -78,8 +102,17 @@ ul {
   text-align: center;
 }
 
+.l-text-center .btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .l-text-right {
   text-align: right;
+}
+
+.l-text-right .btn {
+  margin-left: auto;
 }
 
 /* モジュール
@@ -117,6 +150,11 @@ ul {
   line-height: 1.3;
 }
 
+.card--space {
+  padding: 40px 60px;
+  background-color: #fff;
+}
+
 /* btn */
 .btn {
   display: block;
@@ -130,4 +168,13 @@ ul {
   text-decoration: none;
   letter-spacing: 0.025em;
   border-radius: 30px;
+}
+
+.btn--info {
+  background-color: #2dbe61;
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 1px solid;
 }
